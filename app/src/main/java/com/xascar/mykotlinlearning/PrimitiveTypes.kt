@@ -1,4 +1,4 @@
-package com.example.mykotlinlearning
+package com.xascar.mykotlinlearning
 
 fun main() {
 
@@ -36,7 +36,7 @@ fun main() {
     // ?:  -> is optional value reference / default value in case of null
 
     intTestValue1 = floatTestValueNull?.toInt() ?: 2   // if (notNull) actual value - else default value
-    if (intTestValueNull != null)
+//    if (intTestValueNull != null)
     floatTestValue1 = intTestValueNull!!.toFloat()
     doubleTestValue1 = intTestValueNull?.toDouble() ?: 2.0
     stringTestValue1 = intTestValueNull.toString()

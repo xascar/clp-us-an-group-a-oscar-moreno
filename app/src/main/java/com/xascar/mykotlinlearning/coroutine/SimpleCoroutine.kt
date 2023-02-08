@@ -1,4 +1,4 @@
-package com.example.kotlinbasics.advnaced.coroutinebasic
+package com.xascar.mykotlinlearning.coroutine
 
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.delay
@@ -11,6 +11,7 @@ import kotlinx.coroutines.runBlocking
 * */
 fun main() {
     GlobalScope.launch {
+        println("Launching coroutine..")
         delay(1000L)
         println("Hello from coroutine!")
     }

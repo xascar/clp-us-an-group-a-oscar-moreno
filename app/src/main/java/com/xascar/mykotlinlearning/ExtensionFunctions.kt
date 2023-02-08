@@ -1,4 +1,4 @@
-package com.example.mykotlinlearning
+package com.xascar.mykotlinlearning
 
 
 /*
@@ -29,5 +29,7 @@ fun main() {
     println("Radius   : ${circle.radius}")
     println("Area     : ${circle.area()}")
 
+    //Both implementations provide the same result
     println("Perimeter: ${circle.perimeter()}")
+    println("Perimeter test: ${circle.perimeterTest()}")
 }

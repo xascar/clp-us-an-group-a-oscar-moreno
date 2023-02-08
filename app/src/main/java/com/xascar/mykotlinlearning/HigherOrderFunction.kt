@@ -1,4 +1,4 @@
-package com.example.mykotlinlearning
+package com.xascar.mykotlinlearning
 
 /*
 * Higher Order Function / Lambda Function -> using function as a parameter or return type
@@ -11,8 +11,13 @@ fun main() {
 
     println(callFun())  // higher order function
 
-    val addFun = { a: Int, b: Int ->
+    var addFun = { a: Int, b: Int ->
         a + b
+    }
+    println(addFun(2, 3))
+    //Override variable
+    addFun = { a: Int, b: Int ->
+        a - b
     }
 
     println(addFun(2, 3))

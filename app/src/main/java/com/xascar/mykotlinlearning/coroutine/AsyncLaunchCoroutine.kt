@@ -1,4 +1,4 @@
-package com.example.kotlinbasics.advnaced.coroutinebasic
+package com.xascar.mykotlinlearning.coroutine
 
 import kotlinx.coroutines.async
 import kotlinx.coroutines.delay
@@ -25,11 +25,11 @@ import kotlinx.coroutines.runBlocking
 * */
 fun main() = runBlocking {
     val result = async {
+        println("Start running async from thread: ${Thread.currentThread()}")
         delay(1000L)
         "Hello from async coroutine!"
     }
-    println(result.await())
-    println("Hello from main!")
+    println("${result.await()} Hello from main from thread: ${Thread.currentThread()}!")
 }
 
 

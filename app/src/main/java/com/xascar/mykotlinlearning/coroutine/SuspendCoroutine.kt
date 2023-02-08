@@ -1,4 +1,4 @@
-package com.example.kotlinbasics.advnaced.coroutinebasic
+package com.xascar.mykotlinlearning.coroutine
 
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.runBlocking
@@ -12,6 +12,7 @@ suspend fun doSomething(): String {
 }
 
 fun main() = runBlocking {
+    println("Hello from main")
     val result = doSomething()
     println(result)
 }

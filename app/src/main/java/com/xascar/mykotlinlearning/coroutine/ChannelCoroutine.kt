@@ -1,4 +1,4 @@
-package com.example.kotlinbasics.advnaced.coroutinebasic
+package com.xascar.mykotlinlearning.coroutine
 
 import kotlinx.coroutines.channels.Channel
 import kotlinx.coroutines.launch
@@ -12,10 +12,11 @@ import kotlinx.coroutines.runBlocking
 fun main() = runBlocking {
     val channel = Channel<Int>()
     launch {
+        println("Coroutine scope: $this" )
         for (x in 1..5) channel.send(x * x)
         channel.close()
     }
-    for (y in channel) println(y)
+    for (y in channel) println("$y Coroutine scope: $this" )
 }
 
 
